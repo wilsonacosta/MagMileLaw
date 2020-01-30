@@ -145,6 +145,30 @@ a, a:hover {
 
 /* Footer Start */
 
+.footer {
+  background: #0A344A;
+}
+
+.footer p {
+  color: #FFFFFF;
+  padding: 15px 0;
+}
+
+.footer .topFooter {
+  background: #F7F7F7;
+  text-align: center;
+}
+.footer .topFooter div {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.footer .topFooter ul { margin-bottom: 0;}
+
+.footer .topFooter img {
+  max-width: 300px;
+  width: 100%
+}
 
 /* Footer End */
 
@@ -183,7 +207,10 @@ a, a:hover {
 
   /* Footer Starts */
 
-  
+  .footer .topFooter {
+    padding-bottom: 10px;
+    padding-top: 10px; 
+  }
 
   /* Footer Ends */
 }
