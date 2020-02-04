@@ -203,6 +203,41 @@ section {
   width: 30%;
 }
 
+.tiles_container .tile {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tiles_container .gray_tile {
+  background-color: #D6D2D2;
+}
+
+.tiles_container .tile .tiles_box {
+  background-image: url("https://dummyimage.com/542x450/000/fff.jpg");
+  background-position: center;
+  min-height: 400px;
+}
+
+.tiles_container .tile .tiles_box span {
+  color: var(--white);
+  font-size: 1.5rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+  width: 100%;
+}
+
+.tiles_container .tile p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+  z-index: -1;
+  width: 100%;
+}
+
 #client-logos img {
   display: inline;
   margin-bottom: 5px;
