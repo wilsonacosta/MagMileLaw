@@ -5,3 +5,6 @@ RewriteRule ^(install)($|/) - [L]
 RewriteCond %{REQUEST_URI}  !^(\.png|\.jpg|\.gif|\.jpeg|\.bmp)/$
 RewriteCond %{REQUEST_URI}  !^(.*)/filemanager/(.*)$
 RewriteRule (.*.html|.*.php|.*.htm)  cms_worker.php?page=$1 [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

@@ -138,17 +138,16 @@ img {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
- /* Make this absolute positioned at the top left of the screen */
 #navLinks
 {
-  position: absolute;
-  width: 300px;
-  height: 100vh;
-  margin: -40px 0 0 -350px;
-  padding: 50px 40px;
-  
   background: #ededed;
+  height: 100vh;
+  left: -300px;
   list-style-type: none;
+  position: fixed;
+  padding: 50px 40px;
+  top: 0;
+  width: 300px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -343,12 +342,11 @@ form input[type=submit] {
 
   #navLinks {
     background: inherit;
+    left: auto;
     right: 25px;
     height: inherit;
-    margin-left: -350px;
     margin: inherit;
     padding: inherit;
-    position: fixed;
     top: 0;
     width: inherit;
   }
