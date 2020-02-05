@@ -1,11 +1,13 @@
 //closes and opens mobile navigation
 $('.navLinks, #navCheckBox').click(function() {
-    var elementBody = $('#navLinks');
-    if (elementBody.css('left') != '0px'){
-        elementBody.animate({ left : '+=300px'}, 450 );
-    } else {
-        $("#menuToggle input:checked").prop("checked", false);
-        elementBody.animate({ left : '-=300px'}, 450 );
+    if (window.innerWidth < 992) {
+        var elementBody = $('#navLinks');
+        if (elementBody.css('left') != '0px'){
+            elementBody.animate({ left : '+=300px'}, 450 );
+        } else {
+            $("#menuToggle input:checked").prop("checked", false);
+            elementBody.animate({ left : '-=300px'}, 450 );
+        }
     }
 }) 
 
