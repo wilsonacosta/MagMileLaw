@@ -8,3 +8,14 @@ $('#navCheckBox').click(function() {
         elementBody.animate({ marginLeft : '-=300px'}, 450 );
     }
 }) 
+  
+
+const speed = 1000;
+$('a[href^="#"]')
+    .not('.lp-pom-form .lp-pom-button')
+    .unbind('click.smoothScroll')
+    .bind('click.smoothScroll', function(event) {
+    event.preventDefault();
+    const href = $(this).attr('href').split('#');
+    $('html, body').animate({ scrollTop: $(`#${href[1]}`).offset().top-100 }, speed);
+});
