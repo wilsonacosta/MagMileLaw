@@ -20,6 +20,20 @@ img {
   width: 100%;
 }
 
+h3 {
+  font-size: 2rem;
+  margin: 0 0 15px 0;
+}
+
+h4 { 
+  font-size: 1.4rem; 
+  margin: 10px 0 15px 0;
+}
+
+h4 span {
+  border-bottom: 1px solid var(--gray);
+}
+
 .container {
   max-width: 1200px;
 }
@@ -180,6 +194,10 @@ img {
   background-size: 4px 50px;
 }
 
+.main_body ul li {
+  margin: 5px 0;
+}
+
 section {
   margin-bottom: 50px;
   margin-top: 50px;
@@ -299,6 +317,10 @@ form input[type=submit] {
   padding: 10px 20px;
 }
 
+.attorney_about h3 {
+  margin-top: 20px;
+}
+
 /* Body End */
 
 /* Footer Start */
@@ -367,6 +389,17 @@ form input[type=submit] {
   section {
     margin-bottom: 100px;
     margin-top: 100px;
+  }
+
+  #other_attorneys .attorney {
+    border: 3px solid var(--mainColor);
+    padding: 0;
+  }
+  
+  #other_attorneys .attorney p,
+  #other_attorneys .attorney h4 {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   /* Body Ends */
