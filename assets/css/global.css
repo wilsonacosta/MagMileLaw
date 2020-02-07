@@ -321,6 +321,11 @@ form input[type=submit] {
   margin-top: 20px;
 }
 
+#appellete_litigation .other_practices li {
+  font-weight: bold;
+  padding-left: 15px;
+}
+
 /* Body End */
 
 /* Footer Start */
