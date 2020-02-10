@@ -230,10 +230,27 @@ section {
 }
 
 .tiles_container .tile .tiles_box {
-  background-image: url("https://dummyimage.com/542x450/000/fff.jpg");
   background-position: center;
+  background-size: cover;
   min-height: 400px;
 }
+
+.tiles_container .tile .tiles_box::after {
+  background-color: rgba(0, 0, 0, .5);
+  content: "";
+  top: 0; right: 0; bottom: 0; left: 0;
+  position: absolute;
+}
+
+.tiles_container .tile #tiles_box1 { background-image: url("../images/laptop_500x310.jpg" ); }
+.tiles_container .tile #tiles_box2 { background-image: url("../images/building_lookup_500x310.jpg"); }
+.tiles_container .tile #tiles_box3 { background-image: url("../images/skyline_500x310.jpg"); }
+.tiles_container .tile #tiles_box4 { background-image: url("../images/woman_auto_500x310.jpg"); }
+.tiles_container .tile #tiles_box5 { background-image: url("../images/horizon_500x310.jpg"); }
+.tiles_container .tile #tiles_box6 { background-image: url("../images/suit_up_500x310.jpg"); }
+.tiles_container .tile #tiles_box7 { background-image: url("../images/contract_negotiation_500x310.jpg"); }
+.tiles_container .tile #tiles_box8 { background-image: url("../images/man_table_500x310.jpg"); }
+
 
 .tiles_container .tile .tiles_box span {
   color: var(--white);
@@ -244,6 +261,7 @@ section {
   transform: translateY(-50%);
     -moz-transform: translateY(-50%);
   width: 100%;
+  z-index: 1;
 }
 
 .tiles_container .tile p {
@@ -294,6 +312,7 @@ section {
 .contact_blurb {
   background: var(--accentColor);
   color: var(--white);
+  margin-bottom: 15px;
   padding: 50px 30px;
 }
 
