@@ -264,14 +264,20 @@ section {
   z-index: 1;
 }
 
-.tiles_container .tile p {
+.tiles_container .tile a {
+  background: none;
+  color: inherit;
+  padding: inherit;
+} 
+
+/* .tiles_container .tile p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
     -moz-transform: translateY(-50%);
   z-index: -1;
   width: 100%;
-}
+} */
 
 #client-logos img {
   display: inline;

@@ -3,9 +3,9 @@
 #error_reporting(0);
 
 $host     = 'localhost';
-$user     = 'username';
-$password = 'password';
-$database = 'database name';
+$user     = 'dev';
+$password = 'Rockville1';
+$database = 'magmile';
 
 R::setup('mysql:host='.$host.';dbname='.$database.'', ''.$user.'', ''.$password.'');
 
