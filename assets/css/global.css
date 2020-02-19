@@ -8,7 +8,7 @@
 }
 
 html, body, div, p, a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 a, a:hover {
@@ -204,20 +204,14 @@ section {
 }
 
 .section_headers {
-  line-height: 7rem;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: bolder;
+  line-height: 7rem;
+  text-align: center;
 }
 
-.section_headers::after {
-  background: var(--mainColor);
-  content: '';
-  display: block;
-  height: 10px;
-  left: 0;
-  margin-left: 14px;
-  position: absolute;
-  width: 30%;
+.section_headers span {
+  border-bottom: 10px solid var(--mainColor);
 }
 
 .tiles_container .tile {
