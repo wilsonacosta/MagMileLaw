@@ -16,28 +16,33 @@ a, a:hover {
   text-decoration: none;
 }
 
-button {
+button,
+input[type=submit] {
   background-color: #0A344A;
   border: 1px solid #707070;
-  color: #ffffff;
+  color: var(--white);
   font-size: 1.5rem;
   padding: 15px 20px;
   transition: 0.5s;
 }
 
-button:after {
+button::after,
+input[type=submit]::after {
   content: '\00bb';
+  color: var(--white);
   position: absolute;
   opacity: 0;
   transition: 0.5s;
 }
 
-button:hover {
+button:hover,
+input[type=submit]:hover {
   padding-left: 10px;
   padding-right: 30px;
 }
 
-button:hover::after {
+button:hover::after,
+input[type=submit]:hover::after {
   opacity: 1;
   padding-left: 5px;
 }
@@ -267,13 +272,13 @@ section {
   background-color:rgba(19, 144, 207, .5);
 }
 
-.tiles_container .tile #tiles_box1 { background-image: url("../images/laptop_500x310.jpg" ); }
+.tiles_container .tile #tiles_box1 { background-image: url("../images/personal_injury_600x600.jpg" ); }
 .tiles_container .tile #tiles_box2 { background-image: url("../images/building_lookup_500x310.jpg"); }
 .tiles_container .tile #tiles_box3 { background-image: url("../images/skyline_500x310.jpg"); }
 .tiles_container .tile #tiles_box4 { background-image: url("../images/woman_auto_500x310.jpg"); }
 .tiles_container .tile #tiles_box5 { background-image: url("../images/horizon_500x310.jpg"); }
-.tiles_container .tile #tiles_box6 { background-image: url("../images/suit_up_500x310.jpg"); }
-.tiles_container .tile #tiles_box7 { background-image: url("../images/contract_negotiation_500x310.jpg"); }
+.tiles_container .tile #tiles_box6 { background-image: url("../images/appellate_litigation_600x600.jpg"); }
+.tiles_container .tile #tiles_box7 { background-image: url("../images/fraud_litigation_600x600.jpg"); }
 .tiles_container .tile #tiles_box8 { background-image: url("../images/man_table_500x310.jpg"); }
 
 
@@ -295,12 +300,19 @@ section {
   padding: inherit;
 } 
 
-#whoWeAreHomeImage {
-  background-image: url("../images/suit_up_1200x625.jpg");
+.homeSectionImages {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
+  margin-bottom: 15px;
+}
+
+#whoWeAreHomeImage {
+  background-image: url("../images/suit_up_1200x625.jpg");
+}
+#whyChooseUsImage {
+  background-image: url("../images/why_choose_us_1200x625.jpg");
 }
 
 #client-logos img {
@@ -358,24 +370,6 @@ form textarea {
 }
 
 form textarea { height: 200px; }
-
-form input[type=submit] {
-  background: var(--accentColor);
-  border: 2px var(--gray) solid;
-  color: var(--white);
-  padding: 10px 20px;
-}
-
-/* .subpage_header_img { 
-  height: 50vh;
-  overflow: hidden;
-} */
-
-/* .subpage_header_img img {
-  height: 100%;
-  object-fit: cover;
-  width: auto;
-} */
 
 .attorney_about h3 {
   margin-top: 20px;
