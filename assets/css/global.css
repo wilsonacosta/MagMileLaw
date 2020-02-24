@@ -16,6 +16,32 @@ a, a:hover {
   text-decoration: none;
 }
 
+button {
+  background-color: #0A344A;
+  border: 1px solid #707070;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 15px 20px;
+  transition: 0.5s;
+}
+
+button:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+button:hover {
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+button:hover::after {
+  opacity: 1;
+  padding-left: 5px;
+}
+
 img {
   width: 100%;
 }
@@ -35,10 +61,10 @@ h4 span {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
-.section_header_padding { padding-bottom: 20px; }
+.section_header_padding { padding-bottom: 30px; }
 
 /* Header Start */
 .menu {
@@ -204,7 +230,7 @@ section {
 }
 
 .section_headers {
-  font-size: 5rem;
+  font-size: 2.8rem;
   font-weight: bolder;
   line-height: 7rem;
   text-align: center;
@@ -234,6 +260,11 @@ section {
   content: "";
   top: 0; right: 0; bottom: 0; left: 0;
   position: absolute;
+  transition: background-color .3s;
+}
+
+.tiles_container .tile .tiles_box:hover::after {
+  background-color:rgba(19, 144, 207, .5);
 }
 
 .tiles_container .tile #tiles_box1 { background-image: url("../images/laptop_500x310.jpg" ); }
@@ -264,14 +295,13 @@ section {
   padding: inherit;
 } 
 
-/* .tiles_container .tile p {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-  z-index: -1;
-  width: 100%;
-} */
+#whoWeAreHomeImage {
+  background-image: url("../images/suit_up_1200x625.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
 
 #client-logos img {
   display: inline;
@@ -335,6 +365,17 @@ form input[type=submit] {
   color: var(--white);
   padding: 10px 20px;
 }
+
+/* .subpage_header_img { 
+  height: 50vh;
+  overflow: hidden;
+} */
+
+/* .subpage_header_img img {
+  height: 100%;
+  object-fit: cover;
+  width: auto;
+} */
 
 .attorney_about h3 {
   margin-top: 20px;
@@ -413,6 +454,10 @@ form input[type=submit] {
   section {
     margin-bottom: 100px;
     margin-top: 100px;
+  }
+
+  .section_headers {
+    font-size: 5rem;
   }
 
   #other_attorneys .attorney {
