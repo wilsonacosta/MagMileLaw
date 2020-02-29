@@ -20,10 +20,6 @@
         </div>
         <nav role="navigation">
             <div id="menuToggle">
-              <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
               <input type="checkbox" id="navCheckBox" />
               <span></span>
               <span></span>
@@ -32,9 +28,15 @@
               <ul id="navLinks">
                 <li><a class="navLinks" href="./whoWeAre">WHO WE ARE</a></li>
                 <li><a class="navLinks" href="#whatWeDo">WHAT WE DO</a></li>
-                <li><a class="navLinks" href="#whyChooseUs">NEWS</a></li>
+                <li><a class="navLinks" href="#news">NEWS</a></li>
                 <li><a class="navLinks" href="#whereWeAre">WHERE WE ARE</a></li>
                 <li><a class="navLinks" href="#howWeCanHelp">HOW WE CAN HELP</a></li>
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/magmilelaw" target="_blank"><img src="./assets/images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/magmilelawllc/" target="_blank"><img src="./assets/images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.twitter.com/magmilelaw" target="_blank"><img src="./assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/mag-mile-law" target="_blank"><img src="./assets/images/linkedin.png " alt="Linkedin"></a>
+                </div>
               </ul>
             </div>
         </nav>
@@ -44,6 +46,17 @@
     </div>
     <div class="container main_body">
         <div class="content" id="content">
+            <section>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="contact_blurb">
+                            <p>
+                                Mag Mile Law, LLC is a small firm of highly accomplished attorneys with the simple goal of providing high-quality legal services for our clients. Whether it be the negotiations of transactions or the  battleground of trial, we represent our clients with an unwavering  commitment to their goals. Our ability is not manifested in bought and paid for media accolades. It is forged through the trial and fire of decades of legal experience both inside and outside the courtroom.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="whoWeAre">
                 <div class="row">
                     <div class="col-md-12 section_header_padding" data-aos="fade-right">
@@ -69,7 +82,7 @@
                         </a>
                     </div>
                     <div class="col-md-4 tile">
-                        <a href="./WhatWeDo/personal_injury">
+                        <a href="./WhatWeDo/real_estate_transactions_litigation">
                             <div class="tiles_box" id="tiles_box2">
                                 <span class="tiles_header">REAL ESTATE TRANSACTIONS<br>AND LITIGATION</span>
                             </div>
@@ -94,7 +107,7 @@
                     <div class="col-md-4 tile gray_tile">
                     </div>
                     <div class="col-md-4 tile">
-                        <a href="./WhatWeDo/">
+                        <a href="./WhatWeDo/commercial_transactions">
                             <div class="tiles_box" id="tiles_box5">
                                 <span class="tiles_header">COMMERCIAL TRANSACTIONS<br>AND LITIGATION</span>
                             </div>
@@ -103,9 +116,11 @@
                 </div>
                 <div class="row tiles_container">
                     <div class="col-md-4 tile">
-                        <div class="tiles_box" id="tiles_box6">
-                            <span class="tiles_header">APPELLATE LITIGATION</span>
-                        </div>
+                        <a href="./WhatWeDo/appellate_litigation">
+                            <div class="tiles_box" id="tiles_box6">
+                                <span class="tiles_header">APPELLATE LITIGATION</span>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-4 tile">
                         <a href="./WhatWeDo/fraud_litigation_asset_recovery">
@@ -123,7 +138,7 @@
                     </div>
                 </div>
             </section>
-            <section id="whyChooseUs">
+            <section id="news">
                 <div class="row">
                     <div class="col-md-12 section_header_padding" data-aos="fade-right">
                         <div class="section_headers"><span>NEWS</span></div>
@@ -134,13 +149,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-12">
                         <h2>WHAT SEPERATES US FROM THE REST?</h2>
                         <p>
                             When looking for someone to represent you, look no further than the attorneys at Mag Mile Law. With over 60 years of combined experience representing clients in various types of matters, the attorneys at Mag Mile Law have built a reputation as trusted counselors, dedicated advocates and experienced attorneys. The following cases reflect a sample of the results we have obtained for our clients throughout the years. While these results should not be taken as promises for your case, they reflect the skills we have both inside and outside the courtroom.
                         </p>
                     </div>
-                    <div class="col-md-5">
+                    <!-- <div class="col-md-5">
                         <h2>CLIENTS</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
@@ -153,7 +168,7 @@
                             <img src="https://dummyimage.com/100x100/000/fff.jpg" alt="">
                             <img src="https://dummyimage.com/100x100/000/fff.jpg" alt="">
                         </div> 
-                    </div>
+                    </div> -->
                 </div>
                 <h2>RESULTS</h2>
                 <div class="row results">
@@ -205,47 +220,47 @@
                 </div>
                 <div class="row locations">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/532x400/000/fff.jpg" alt="">
+                        <img src="./assets/images/michigan_ave.jpg" alt="Chicago">
                         <h3>CHICAGO</h3>
                         <ul>
                             <li>
-                                <a href="tel:555.555.555">555.555.5555</a>
+                                <a href="tel:708-576-1624">708.576.1624</a>
                             </li>
                             <li>
-                                <a href="mailto:jsmith@magmilelaw.com">JSMITH@MAGMILELAW.COM</a>
+                                <a href="mailto:mario@magmilelaw.com">MARIO@MAGMILELAW.COM</a>
                             </li>
                             <li>
-                                <a href="">535 N. Michigan Ave., Suite 200, Chicago, IL 60611</a>
+                                <a href="https://goo.gl/maps/19eweNrNokCcW9hr5">535 N. MICHIGAN AVE., SUITE 200, CHICAGO, IL 60611</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/532x400/000/fff.jpg" alt="">
+                        <img src="./assets/images/elmhurst.jpg" alt="Elmhurst">
                         <h3>ELMHURST</h3>
                         <ul>
                             <li>
-                                <a href="tel:555.555.555">555.555.5555</a>
+                                <a href="tel:708-576-1624">708.576.1624</a>
                             </li>
                             <li>
-                                <a href="mailto:jsmith@magmilelaw.com">JSMITH@MAGMILELAW.COM</a>
+                                <a href="mailto:mario@magmilelaw.com">MARIO@MAGMILELAW.COM</a>
                             </li>
                             <li>
-                                <a href="">4340 W. Butterfield Road, Suite 4B, Elmhurst, IL 60126</a>
+                                <a href="https://goo.gl/maps/Mpjwz2U5YUhWmqhZ6">4340 W. BUTTERFIELD ROAD, SUITE 4B, ELMHURST, IL 60126</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/532x400/000/fff.jpg" alt="">
+                        <img src="./assets/images/northbrook.jpg" alt="Northbrook">
                         <h3>NORTHBROOK</h3>
                         <ul>
                             <li>
-                                <a href="tel:555.555.555">555.555.5555</a>
+                                <a href="tel:708-576-1624">708.576.1624</a>
                             </li>
                             <li>
-                                <a href="mailto:jsmith@magmilelaw.com">JSMITH@MAGMILELAW.COM</a>
+                                <a href="mailto:mario@magmilelaw.com">MARIO@MAGMILELAW.COM</a>
                             </li>
                             <li>
-                                <a href="">1442 Techny Road, Northbrook, IL 60062</a>
+                                <a href="https://goo.gl/maps/a41ckekka9e47CBh7">1442 TECHNY ROAD, NORTHBROOK, IL 60062</a>
                             </li>
                         </ul>
                     </div>
@@ -263,22 +278,23 @@
                             </p>
                         </div>
                         <h2>CONTACT MAG MILE LAW</h2>
-                        <form>
+                        <form action="https://formspree.io/xnqvzlba" method="POST">
                             <div class="row">
                                 <div class="col-md-6">
                                     <input type="text" name="name" id="contact_name" placeholder="Name *" />
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" name="email" id="contact_email" placeholder="Email *" />
+                                    <input type="email" name="_replyto" id="contact_email" placeholder="Email *" />
                                 </div>
                                 <div class="col-md-12">
                                     <input type="text" name="subject" id="contact_subject" placeholder="Subject *" />
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea id="contact_message" placeholder="Message *"></textarea>
+                                    <textarea id="contact_message" placeholder="Message *" name="message"></textarea>
                                 </div>
+                                <input type="hidden" name="_next" value="https://magmilelaw.com/thankYou.html"/>
                             </div>
-                            <input type="submit" name="submit" id="contact_submit" value="SUBMIT">
+                            <input type="submit" name="submit" id="contact_submit" value="Send">
                         </form>
                     </div>
                 </div>
@@ -287,22 +303,23 @@
     </div>
     <div class="footer container-fluid">
         <div class="row topFooter">
-            <div class="col-md-4">
+            <div class="col-md-4 logo">
                 <img src="./assets/images/mag_mile_logo_black_txt.png" alt="MagMile Law Logo">
             </div>
             <div class="col-sm-6 col-md-4">
                 <ul>
-                    <li><a href="">535 N. Michigan Ave., Suite 200, Chicago, IL 60611</a></li>
-                    <li><a href="tel:3125555555">312.555.5555</a></li>
+                    <li><a href="https://goo.gl/maps/19eweNrNokCcW9hr5">535 N. MICHIGAN AVE., SUITE 200, CHICAGO, IL 60611</a></li>
+                    <li><a href="tel:708-576-1624">708.576.1624</a></li>
                     <li><a href="mailto:info@magmilelaw.com">info@MAGMILELAW.COM</a></li>
                 </ul>
             </div>
             <div class="col-sm-6 col-md-4">
-                <ul>
-                    <li><a href="#">MICHIGAN AVE</a></li>
-                    <li><a href="#">ELMHURST</a></li>
-                    <li><a href="#">NORTHBROOK</a></li>
-                </ul>
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/magmilelaw" target="_blank"><img src="./assets/images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/magmilelawllc/" target="_blank"><img src="./assets/images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.twitter.com/magmilelaw" target="_blank"><img src="./assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/mag-mile-law" target="_blank"><img src="./assets/images/linkedin.png " alt="Linkedin"></a>
+                </div>
             </div>
         </div>
         <p><a href="./privacy">Privacy Policy</a></p> 

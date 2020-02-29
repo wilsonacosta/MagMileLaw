@@ -15,26 +15,28 @@
     
     <div class="menu">
         <div class="logo">
-            <a href="/"><img src="../assets/images/mml_logo_wht_txt.png" alt="Mag Mile Law Logo"></a>
+            <img src="../assets/images/mml_logo_wht_txt.png" alt="Mag Mile Law Logo">
         </div>
         <nav role="navigation">
             <div id="menuToggle">
-                <!--
-                A fake / hidden checkbox is used as click reciever,
-                so you can use the :checked selector on it.
-                -->
-                <input type="checkbox" id="navCheckBox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                
-                <ul id="navLinks">
-                    <li><a class="navLinks" href="../#whoWeAre">WHO WE ARE</a></li>
-                    <li><a class="navLinks" href="../#whatWeDo">WHAT WE DO</a></li>
-                    <li><a class="navLinks" href="../#whyWeWin">WHY WE WIN</a></li>
-                    <li><a class="navLinks" href="../#whereWeAre">WHERE WE ARE</a></li>
-                    <li><a class="navLinks" href="../#howWeCanHelp">HOW WE CAN HELP</a></li>
-                </ul>
+              <input type="checkbox" id="navCheckBox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <ul id="navLinks">
+                <li><a href="../whoWeAre">WHO WE ARE</a></li>
+                <li><a href="../#whatWeDo">WHAT WE DO</a></li>
+                <li><a href="../#news">NEWS</a></li>
+                <li><a href="../#whereWeAre">WHERE WE ARE</a></li>
+                <li><a href="../#howWeCanHelp">HOW WE CAN HELP</a></li>
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/magmilelaw" target="_blank"><img src="./assets/images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/magmilelawllc/" target="_blank"><img src="./assets/images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.twitter.com/magmilelaw" target="_blank"><img src="./assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/mag-mile-law" target="_blank"><img src="./assets/images/linkedin.png " alt="Linkedin"></a>
+                </div>
+              </ul>
             </div>
         </nav>
     </div>
@@ -161,28 +163,33 @@
     </div>
     <div class="footer container-fluid">
         <div class="row topFooter">
-            <div class="col-md-4">
+            <div class="col-md-4 logo">
                 <img src="../assets/images/mag_mile_logo_black_txt.png" alt="MagMile Law Logo">
             </div>
             <div class="col-sm-6 col-md-4">
                 <ul>
-                    <li><a href="">4000 ALTON ROAD, CHICAGO, IL, 60611</a></li>
-                    <li><a href="tel:3125555555">312.555.5555</a></li>
+                    <li><a href="https://goo.gl/maps/19eweNrNokCcW9hr5">535 N. MICHIGAN AVE., SUITE 200, CHICAGO, IL 60611</a></li>
+                    <li><a href="tel:708-576-1624">708.576.1624</a></li>
                     <li><a href="mailto:info@magmilelaw.com">info@MAGMILELAW.COM</a></li>
                 </ul>
             </div>
             <div class="col-sm-6 col-md-4">
-                <ul>
-                    <li><a href="#">MICHIGAN AVE</a></li>
-                    <li><a href="#">ELMHURST</a></li>
-                    <li><a href="#">NORTHBROOK</a></li>
-                </ul>
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/magmilelaw" target="_blank"><img src="../assets/images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/magmilelawllc/" target="_blank"><img src="../assets/images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.twitter.com/magmilelaw" target="_blank"><img src="../assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/mag-mile-law" target="_blank"><img src="../assets/images/linkedin.png " alt="Linkedin"></a>
+                </div>
             </div>
         </div>
-        <p>Privacy Policy</p> 
+        <p><a href="../privacy">Privacy Policy</a></p> 
     </div>
 
     <script src="../assets/js/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="../assets/js/main.js"></script>
 </body>
 </html>
