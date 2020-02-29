@@ -309,6 +309,18 @@ section {
   margin-bottom: 15px;
 }
 
+#mainPageHeader {
+  color: var(--black);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#biggerResults {
+  display: block;
+  font-size:3rem;
+  font-weight: bold;
+}
+
 #whoWeAreHomeImage {
   background-image: url("../images/suit_up_1200x625.jpg");
 }
@@ -473,6 +485,17 @@ form textarea { height: 200px; }
 
   .section_headers {
     font-size: 5rem;
+  }
+
+  #mainPageHeader {
+    font-size: 2.8rem;
+    position: absolute;
+    right: 30px;
+    top: 175px;
+  }
+  
+  #biggerResults {
+    font-size: 4rem;
   }
 
   #other_attorneys .attorney {
