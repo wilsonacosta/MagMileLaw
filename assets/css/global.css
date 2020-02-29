@@ -252,11 +252,11 @@ section {
 }
 
 .tiles_container .gray_tile {
-  background-color: #D6D2D2;
+  background-color: var(--gray);
   background-image: url("../images/magmile_logo_not_txt.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 50%;
 }
 
 .tiles_container .tile .tiles_box {
